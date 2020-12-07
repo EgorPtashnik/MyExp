@@ -1,0 +1,77 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "client",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "Client",
+    "description": "Client App"
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "client.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "idApp"
+    },
+    "dependencies": {
+      "minUI5Version": "1.60.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+    },
+    "resources": {
+      "css": [
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "client.view",
+        "controlId": "idApp",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "Home",
+          "pattern": "",
+          "target": "Target_Home"
+        }
+      ],
+      "targets": {
+        "Target_Home": {
+          "viewType": "XML",
+          "viewName": "Home"
+        }
+      }
+    }
+  }
+}

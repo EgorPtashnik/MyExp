@@ -1,0 +1,27 @@
+{
+  "name": "node_oauth",
+  "version": "1.0.0",
+  "description": "Node.js + leverx les service (oauth)",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgorPtashnik/MyExp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EgorPtashnik/MyExp/issues"
+  },
+  "homepage": "https://github.com/EgorPtashnik/MyExp#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "googleapis": "^66.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
